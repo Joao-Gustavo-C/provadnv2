@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
-import usuarioController from './usuarioController.js';
+import usuarioController from './controller/usuarioController.js'
 
 
 
@@ -9,7 +9,7 @@ import usuarioController from './usuarioController.js';
 const server = express();
 server.use(cors());
 server.use(express.json());
-server.use (usuarioController);
+server.use(usuarioController);
 
 
 
